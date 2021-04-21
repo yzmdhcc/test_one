@@ -1,0 +1,73 @@
+.footer{
+  width:1170px;
+  margin:0 auto;
+}
+.footer a:hover{
+  color:rgb(44, 43, 43);
+}
+.footer .footerServer,
+.footer .footerServer li{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footerServer{
+  padding:20px 0px;
+  border-bottom:1.2px solid rgb(243, 176, 176);
+}
+.footer .footerServer li{
+  width:25%;
+  text-align:center;
+  /* cursor: pointer; */
+}
+.footer .footerServer li .footerTopImg{
+  width:50%;
+}
+.footer .footerTitelTop{
+  width:50%;
+  padding-right:18px;
+}
+.footer .footerTitelTop a:nth-child(1){
+   font:bold 18px "";
+}
+.footer .footerTitelTop a:last-child{
+  display:block;
+  font-size:12px;
+  margin-top:12px;
+  color:rgb(248, 126, 126) !important;
+}
+.footer .footerHelp ul li .helpContent img{
+   width:160px;
+   height: 150px;
+   margin-top:8px; 
+}
+.footer .footerHelp ul li .helpContent a{
+   display: block;
+   margin-top:8px; 
+}
+.footer .footerHelp ul li .helpTitle{
+  font:bold 14px "";
+  color:#000;
+}
+.footer .footerHelp ul{
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+}
+.footer .copyright{
+  width:100%;
+  text-align: center;
+}
+.footer .copyright .copyrightOne a{
+   font:bold 14px "";
+   letter-spacing:0.1em;
+   color:rgb(80, 79, 79); 
+}
+.footer .copyright .copyrightAddress{
+  padding:10px 5px;
+}
+.footer .copyright .attestationIcon img{
+  margin:0px 2px;
+  border-radius:5px;  
+  border:1px solid rgb(243, 227, 10);
+}

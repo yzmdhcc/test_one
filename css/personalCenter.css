@@ -1,0 +1,1088 @@
+.myCenter{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    /* margin-top: 30px; */
+    background-color: #ffffff !important;
+}
+/*头部导航栏*/
+.myCenter>.myCenterTop{
+    width:100%;
+    color: #fff;
+    height:3.5rem;
+    /* border:1px solid rgb(73, 244, 250); */
+    background-image: linear-gradient(to top,rgb(247, 84, 9) 0%,rgb(250, 92, 29)100%);
+}
+.myCenter>.myCenterTop>ul{
+    width:1170px;
+    display: flex;
+    height:3.5rem;
+    /*line-height:3.5rem;*/
+    flex-direction:row;
+    align-items: center;
+    letter-spacing:0.5em;
+    margin:0 auto;
+    /* border:1px solid red; */
+}
+.myCenter>.myCenterTop>ul>li>a{
+    color:#fff;
+}
+.myCenter>.myCenterTop>ul>li:first-child{
+    font-weight: bold;
+    font-size:16px;
+    text-align: left !important;
+}
+.myCenter>.myCenterTop>ul>li:nth-child(2){
+    margin-left:8% !important;
+}
+.myCenter>.myCenterTop>ul>li:not(:first-child){
+    margin-left:3%;
+}
+/* .myCenter>.myCenterTop>ul>li:last-child>.centerMenu{
+  display:none;
+} */
+.myCenter>.myCenterTop>ul>li:last-child>a>.centerSzie{
+    display: flex;
+    align-items: center;
+}
+.myCenter>.myCenterTop>ul>li:last-child>a>.centerSzie>img{
+   /* display: inline-block; */
+   display: block;
+   width:16px;
+   height:16px;
+   margin-top:3px;
+}
+.myCenter>.myCenterTop>ul>li:last-child>a>.centerSzie .zhseUpIcon{
+    display:none;
+}
+/*切换小三角形*/
+.myCenter>.myCenterTop>ul>li:last-child:hover>a>.centerSzie .zhseUpIcon{/*向上*/
+    display: block;
+}
+.myCenter>.myCenterTop>ul>li:last-child:hover>a>.centerSzie .zhseDownIcon{/*向下*/
+    display: none;
+}
+/*账户设置的二级菜单效果*/
+.myCenter>.myCenterTop>ul>li:last-child>a{
+    display:inline-block;
+    position: relative;
+}
+/*小三角形的效果样式*/
+.myCenter>.myCenterTop>ul>li:last-child>.center_Menu .sjx_div{
+    position: absolute;
+    top:-13px;
+    left:300px;
+    width:0;height:0;
+    z-index:999;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:20px solid rgb(255, 253, 253);
+    border-radius:0.2rem;
+}
+.myCenter>.myCenterTop>ul>li:last-child>.center_Menu{
+    position: absolute;
+    z-index:50;
+    top:45px;
+    left:6%;
+    opacity:0;
+    transition:all .5s linear;
+    /* display:none; */
+    color: black;
+    width:720px !important;
+    border:1px solid rgb(238, 237, 237) !important;
+    border-radius:0.3rem;
+    background-image:linear-gradient(to top,rgb(255, 253, 255) 0%,rgb(255, 255, 255) 100%);
+    box-shadow:0.5px 0.5px 4px rgb(56, 56, 56);
+    padding:2rem 0;
+    display: flex;
+    justify-content:space-around;
+    z-index:-99;
+    /* text-align: center; */
+}
+.myCenter>.myCenterTop>ul>li:last-child>.center_Menu>li{
+    width:180px;
+}
+.myCenter>.myCenterTop>ul>li:last-child>.center_Menu>li h4{
+    font-size:16px !important;
+    font-weight: normal;
+    display: block !important;
+    cursor: default;
+    margin-bottom:15px;
+}
+.myCenter>.myCenterTop>ul>li:last-child>.center_Menu>li:nth-child(2) h4{
+  color: rgb(15, 175, 23);
+  /* font-size:16px !important; */
+} 
+.myCenter>.myCenterTop>ul>li:last-child>.center_Menu>li:nth-child(3) h4{
+  color: rgb(243, 26, 73);
+}
+.myCenter>.myCenterTop>ul>li:last-child>.center_Menu>li:last-child h4{
+   color: rgb(31, 117, 245);
+}
+.myCenter>.myCenterTop>ul>li:last-child>.center_Menu>li>ul>li{
+    line-height:2.5rem;
+}
+.myCenter>.myCenterTop>ul>li:last-child>.center_Menu>li>ul>li>a{
+    font-size:14px !important;
+}
+/*显示账户设置的二级菜单*/
+.myCenter>.myCenterTop>ul>li:last-child:hover .center_Menu{
+    opacity:1;
+    width:720px;
+    z-index:9999;
+}
+/*二、内容部分*/
+.myCenter>.personalCenter{
+    width:1170px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+/*左边导航栏---一些基础功能的css样式效果*/
+.myCenter>.personalCenter>.Pleft{
+   width:150px;
+   height:480px;
+   background-image: linear-gradient(to left,rgb(254, 255, 255) 0%,rgb(254, 255, 254) 100%);
+}
+.myCenter>.personalCenter>.Pleft>h4{
+  font:bold 16px "";
+  color: rgb(223, 16, 16);
+  margin-bottom:10px;
+}
+.myCenter>.personalCenter>.Pleft>ul>li{
+  line-height:2rem;
+  letter-spacing: 0.2rem;
+}
+.myCenter>.personalCenter>.Pleft>ul>li>a>div{
+    display: flex;
+    align-items: center;
+}
+.myCenter>.personalCenter>.Pleft>ul>li>a>div>span{
+    display: block;
+}
+.myCenter>.personalCenter>.Pleft>ul>li>a>div>.jianTou{
+    width:14px;height:14px;
+    border:1px solid rgb(247, 114, 37);
+    margin-left:10px;
+    border-radius:0.2rem;
+}
+/*向下的小三角形默认显示*/
+.myCenter>.personalCenter>.Pleft>ul>li>a>div>.jianTou>.xsjx_perDown,
+.myCenter>.personalCenter>.Pleft>ul>li>a>div>.jianTou>.xsjx_perUp{
+    width:0;height:0;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent ;
+    margin:0 auto;
+    border-radius:0.1rem;
+}
+.myCenter>.personalCenter>.Pleft>ul>li>a>div>.jianTou>.xsjx_perDown{
+   border-top:7px solid rgb(252, 35, 35);
+   margin-top:2.5px;
+}
+/*向上的小三角形默认隐藏*/
+.myCenter>.personalCenter>.Pleft>ul>li>a>div>.jianTou>.xsjx_perUp{
+    border-bottom:7px solid rgb(248, 49, 49);
+    margin-top:1px;
+    display: none;
+    
+}
+.myCenter>.personalCenter>.Pleft>ul>li .menu_perCen{
+    margin-left:20px !important;
+    width:90px;
+    background-color: rgb(210, 211, 211);
+    text-align: center;
+    border-radius:0.2rem;
+    display: none;
+}
+/*中间我的待付款，收货等的样式效果*/
+.myCenter>.personalCenter>.Pcenter{
+   width:720px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne{
+    width:100%;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top{
+    height:12rem;
+    border-radius: 0.2rem;
+    border:1px solid rgb(236, 235, 235);
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav{
+    width:100%;
+    height:6rem;
+    background-image: linear-gradient(to top,rgb(184, 228, 248) 0%,rgb(186, 245, 247) 100%);
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>li a{
+    color: rgb(46, 46, 46);
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>li a:hover{
+    color: red;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.txAndname{
+    display: flex;
+    align-items: center;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.txAndname>.perTouXing{
+   width:80px;
+   height:80px;
+   border-radius:50%;
+   border:1px solid rgb(211, 210, 210);
+   /* margin-top:0px; */
+   margin-right:6px;
+   position: relative;/*相对定位*/
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.txAndname>.perTouXing img{
+   width:100%;
+   margin-top:3px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.txAndname>.perTouXing .xgtxiang{
+  position: absolute;  
+  top:30px;
+  left:10px;
+  transition: all .5s linear;
+  font-size:15px;
+  color: #fcfdfd;
+  z-index:-999;
+  opacity:0;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.txAndname>.perTouXing:hover .xgtxiang{
+    opacity:1;
+    z-index:999;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.txAndname a{
+    display: block;
+    width:130px;
+    font-size:12px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>li{
+    width:210px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>li:not(:first-child){
+    text-align: center;
+    letter-spacing:0.2rem;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>li:first-child a{
+    letter-spacing:0.15rem ;
+}
+/*我的优惠信息及二级菜单的css样式效果*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi>a .wdyhxx{
+   display: flex;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi>a{
+    display: block;
+    height:6rem;
+    width:170px;
+    transition: all .5s linear;
+    line-height: 6rem;
+    padding-left:10px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi:hover a{
+    background-color: rgb(190, 227, 248);
+    color: rgb(243, 28, 28) !important; 
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi>a .wdyhxx .wdyh_img_icon img{
+    width:20px;height:20px;
+    margin-left:5px;
+    margin-top:33px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi:hover >a .wdyhxx .wdyh_img_icon .wdyh_iconDown{
+    display: none;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi:hover >a .wdyhxx .wdyh_img_icon .wdyh_iconUp{
+    display: block;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi>a .wdyhxx .wdyh_img_icon .wdyh_iconUp{
+  display: none;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi a{
+    position: relative;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi .wodeyouhuixx_menu{
+    position: absolute;
+    top:174px;
+    width:320px;
+    height:150px;
+    transition: all .5s linear;
+    background-color: rgb(190, 227, 248);
+    text-align: left;
+    padding-left:10px;
+   
+    border-bottom-left-radius:0.3rem ;
+    border-bottom-right-radius: 0.3rem;
+    opacity:0;
+    z-index:-999;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi:hover .wodeyouhuixx_menu{
+   width:320px;
+   height:150px;
+   opacity: 1;
+   z-index: 999;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi:hover .wodeyouhuixx_menu a{
+    color: #000 !important;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi .wodeyouhuixx_menu a:hover{
+    color: red !important;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top>.nav>ul>.wdyhxinxi .wodeyouhuixx_menu li{
+    line-height:2.2rem;
+}
+/*待收货，待付款，退款等的css样式效果*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top .navffspt{
+    width:720px;
+    height:6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top:1px solid rgb(236, 235, 235);
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.top .navffspt li{
+    width:120px;
+    text-align: center;
+}
+/*订单信息和退款信息等*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion{
+  width:720px;
+  padding:10px 0;
+}
+/*物流信息*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.wuliuxingxi{
+  width:720px;
+  height:60px;
+  background-image: linear-gradient(to top,rgb(184, 228, 248) 0%,rgb(186, 245, 247) 100%);
+  border-radius:0.2rem;
+  margin-top:10px;
+  display: flex;
+  align-items: center;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.wuliuxingxi span{
+    letter-spacing: 0.2rem;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.wuliuxingxi>.wuluCarImg{
+   width:80px;
+   height:40px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.wuliuxingxi>.wuluCarImg img{
+    width:100%;
+    height:100%;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion{
+  width:720px;
+  margin-top:15px;
+}
+/*默认*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.defOrder{
+  width:100%;height: 60px;
+  display: none;
+}
+/*待付款*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.daifukaui{
+   width:720px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.share>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:720px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.daifukaui>ul li{
+  height:120px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.share>ul>.shopImg img{
+   width:140px;height:100px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.share>ul>.shopXingxi{
+    width:320px;
+    height:80px;
+     display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:4;
+    overflow: hidden;
+    margin-top:-15px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.daifukaui>ul>.btnCount{
+    width:120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:-15px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.daifukaui>ul>.btnCount>button,
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.daifukaui>ul>.btnCount>input{
+    display: block; border-radius: 0.2rem;  height:25px;  text-align: center;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.daifukaui>ul>.btnCount>button{
+    width:25px;
+    border: 0;
+    background-image: linear-gradient(to left,rgb(250, 140, 217) 0%,rgb(253, 148, 229) 100%);
+    color: #ffffff;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.daifukaui>ul>.btnCount>input{
+    width:60px;
+    border:0.5px solid rgb(245, 95, 95);
+    color: rgb(54, 54, 54);
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.daifukaui>ul>.btnGouMai{
+    width:120px;
+    display: flex;justify-content: space-between;align-items: center;
+    margin-top:-15px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.daifukaui>ul>.btnGouMai button{
+    display: block;
+    width:58px;
+    height:30px;
+    font-size:12px;
+    border:0px;
+    border-radius: 0.2rem;
+    color: #ffffff;
+    background-image: linear-gradient(to top,rgb(120, 181, 252) 0%,rgb(105, 189, 245) 100%);
+}
+/*待发货*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.fahou_sh_pj_tk>ul>.zhuangTai{
+    width:240px;
+   text-align: right;
+   margin-right:5px;
+   color: rgb(250, 120, 200);
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.fahou_sh_pj_tk>ul>.zhuangTai span{
+   display: block;
+}
+/*待收货*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.fahou_sh_pj_tk>ul>.zhuangTai>.daishouhou,
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.fahou_sh_pj_tk>ul>.zhuangTai>.daipj,
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.fahou_sh_pj_tk>ul>.zhuangTai>.tuikuan
+{
+  display: none;
+}
+/*待待评价*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.fahou_sh_pj_tk>ul>.zhuangTai>.daipj{
+
+}
+/*退款*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.detailConteion>.fahou_sh_pj_tk>ul>.zhuangTai>.tuikuan{
+
+}
+
+/*为你推荐*/
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun{
+   width:720px;
+   background-color: #fff !important;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.nav>ul{
+  width:720px;
+  height:40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0px 15px;
+  margin-top:10px;
+  border-radius:0.2rem;
+  color: #fff;
+  background-image: linear-gradient(to top,rgb(99, 237, 247) 0%,rgb(128, 237, 245) 100%);
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.nav>ul .suaxin{
+   display: flex;
+   width: 120px;
+   justify-content: space-between;
+   align-items: center;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.nav>ul .suaxin div{
+   width:30px;
+   height:30px;
+   border-radius:50%;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.nav>ul .suaxin div img{
+  width:100%;height:100%;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.nav>ul .suaxin button{
+    width:80px;
+    height:28px;
+    border-radius:0.2rem;
+    border: 0;
+    background-image: linear-gradient(to top,rgb(255, 254, 254) 0%,rgb(255, 254, 254) 100%);
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.advance{
+    width:720px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.advance>ul{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.advance>ul>li{
+    width:234px;
+    border:1px solid rgb(235, 233, 233);
+    border-radius:0.2rem;
+    margin:3px 0px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.advance>ul>li>.advancePics{
+    width:232px;
+    padding:6px 6px;
+    margin:3px 0px;
+    background-color: #fff;
+    /* border:1px solid rgb(126, 239, 247);
+    border-radius:0.2rem; */
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.advance>ul>li>.advancePics img{
+   width:100%;
+   height:190px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.advance>ul>li>.advanceInfo{
+    width:232px; 
+    background-color: #fff;
+    /* border:0.5px solid rgb(126, 239, 247); */
+    /* border-radius:0.2rem; */
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.advance>ul>li>.advanceInfo>span{
+    display: block;
+    width:232px;
+    /* padding:5px 0px; */
+    padding-left:5px;
+    font-size:12px;
+    color: #4e4e4e;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap; 
+    text-align: center;
+    margin-top: 6px;
+}
+.myCenter>.personalCenter>.Pcenter>.PcenterSfhuoXxOne>.weinituicun>.advance>ul>li>.advanceInfo>.advancePrice{
+  text-align: center;
+  color: #ec4e1e;
+  padding:3px 0px;
+  font:bold 14px  ""; 
+  margin-top: 4px;
+}
+
+/*日历和一些便利服务的css效果*/
+.myCenter>.personalCenter>.Pright{
+    width:290px;
+}
+.myCenter>.personalCenter>.Pright>.wdrl{
+    width:290px;
+    text-align: center;
+}
+.myCenter>.personalCenter>.Pright>.wdrl ul li:first-child{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    border-radius:0.2rem;
+    font-size: 16px;
+    color: rgb(249, 252, 248);
+    background-image: linear-gradient(to top,rgb(63, 233, 245) 0%,rgb(73, 240, 226) 100%);
+}
+.myCenter>.personalCenter>.Pright>.wdrl ul li:last-child{
+  width:100%;
+  height:202px;
+  margin-top:5px;
+  border-radius:0.1rem;
+  border:1px solid rgb(238, 237, 237);
+  background-color: rgb(222, 236, 245);
+}
+.myCenter>.personalCenter>.Pright>.wdrl ul li:last-child h3{
+    margin-top:40px;
+    font-size:52px;
+    color: rgb(63, 233, 245);
+    letter-spacing:0.3rem;
+}
+.myCenter>.personalCenter>.Pright>.wdrl ul li:last-child .mdy{
+    color:rgb(49, 243, 31);
+    letter-spacing:0.5em;
+}
+.myCenter>.personalCenter>.Pright>.wdrl ul li:last-child .yearmouthday{
+  color: rgb(241, 21, 105);
+  margin:10px 0;
+}
+/*便民服务*/
+.myCenter>.personalCenter>.Pright>.pmfw{
+  width:290px;
+  border:1px solid rgb(218, 216, 216);
+  margin-top:10px;
+  border-radius: 0.2rem;
+}
+.myCenter>.personalCenter>.Pright>.pmfw>.biaoti{
+   width:289px;
+   height:40px;
+   background-color: rgb(190, 63, 240);
+   text-align: center;
+   border-top-left-radius: 0.2rem;
+   border-top-right-radius: 0.2rem;
+   line-height:40px;
+   color: rgb(248, 16, 35);
+   letter-spacing:2.2em;
+}
+.myCenter>.personalCenter>.Pright>.pmfw>.pfmw_contions ul{
+  width:290px;
+  height:252px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.myCenter>.personalCenter>.Pright>.pmfw>.pfmw_contions ul li{
+   width:68px;
+   height:80px;
+   text-align: center;
+   border:1px solid #ccc; 
+   margin:0 2px;
+   margin-top:2px;
+  
+   
+}
+.myCenter>.personalCenter>.Pright>.pmfw>.pfmw_contions ul li img{
+   width:100%;
+   height:45px;
+}
+/* .myCenter>.personalCenter>.Pright>.pmfw>.pfmw_contions ul li a div{
+    
+} */
+/*支付信息界面*/
+.myCenter>.InfoPayParent{
+    width:740px;height:0px;
+    position: relative;
+    display: none;
+}
+.myCenter>.InfoPayParent>.payInformtion{
+    width:740px;
+    height:520px;
+    border-radius:0.3rem;
+    border:1px solid rgb(230, 229, 229);
+    position: fixed;
+    top:60px;
+    left:17%;
+    z-index: 999999;
+    background-image:linear-gradient(to top,rgb(255, 253, 255) 0%,rgb(255, 255, 255) 100%);
+    box-shadow:0.5px 0.5px 4px rgb(56, 56, 56);
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.top{
+  width:100%;display: flex;justify-content: space-between;
+  margin:5px 0px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.top>span:first-child{
+    margin-left:10px;
+    color: #f08a17;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.top>span:last-child{
+    margin-right:10px;
+    color: rgb(165, 78, 247);
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.centers{
+  width:100%;margin-top:10px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.centers>ul{
+    width:100%;display: flex;justify-content: space-between;align-items: center;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.centers>ul li{
+    height:180px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.centers>ul .shopImg{
+    width:200px;
+    height:170px;
+    border:1px solid rgb(199, 200, 201);
+    border-radius:0.2rem;
+    margin-left:10px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.centers>ul>.shopImg img{
+    width:100%;height:160px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.centers>ul>.shopXingxi{
+    width:520px;
+    padding-top:60px;
+    color: rgb(87, 85, 84);
+    letter-spacing:0.1em;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers{
+  width:100%;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>li{
+    margin:5px 0;
+    margin-left:5px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>li label{
+  text-align: right;
+  display: inline-block;
+  width:80px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>li>input{
+    width:640px;height:35px;
+    border-radius:0.3rem;
+    border:0.5px solid rgb(91, 224, 247);
+    padding-left:10px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>.dispatching>div{
+    width:100%;text-align:center;
+    margin-right:10px;
+    margin:4px 0px;
+    color: crimson;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>.shopCount{display: flex;}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>.shopCount>label{
+    margin-top:5px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>.shopCount>div{
+    display: flex;
+    width:250px;
+    justify-content: space-between;
+    align-items: center;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>.shopCount>div>input{
+    width:180px;height:30px;
+    border-radius: 0.3rem;
+    border:1px solid rgb(91, 224, 247);
+    text-align: center;
+    color: rgb(241, 129, 24);
+
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>.shopCount>div>button{
+    width:30px;height:30px;
+    border:0;
+    border-radius:0.3rem;
+    background-image: linear-gradient(to top,rgb(86, 213, 245) 0%,rgb(138, 207, 247) 100%);
+    text-align: center;
+    color: #fff;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>.price span{
+  color: #e71212;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.footers>ul>.doubt{
+    margin-left:15px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.pay{
+   width:100%; margin-top:5px;
+   text-align: right;
+   padding-right:15px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.content>.pay button{
+    width:90px;height:35px;
+    border:0px;
+    border-radius:0.3rem;
+    color: #f3cd23;
+    background-image: linear-gradient(to top,rgb(67, 168, 250) 0%,rgb(65, 162, 253) 100%);
+}
+/*支付功能*/
+.myCenter>.InfoPayParent>.payInformtion>.payment{
+  width:300px;
+  height:480px;
+  position: absolute;
+  left:26%;
+  top:3%;
+  border:0.5px solid rgb(243, 241, 241);
+  z-index: 9999999;
+  background-image:linear-gradient(to top,rgb(255, 253, 255) 0%,rgb(255, 255, 255) 100%);
+  box-shadow:0.5px 0.5px 4px rgb(56, 56, 56);
+  border-radius:0.3rem;
+  text-align: center;
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.talbePwd table tr td input{
+   width:35px;height:35px;
+   text-align: center;
+   margin:0 2px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.talbePwd>.paykai{
+  display: flex;justify-content: space-between;
+  height:40px;
+  font-size:12px;
+  align-items: center;
+  color: #4e4e4e;
+
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.talbePwd>.paykai p:first-child{
+    margin-left:-20px !important;
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.talbePwd>.paykai p:last-child{
+    margin-right:5px !important;
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.talbePwd{
+  padding-left:26px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.top{
+  padding-top:100px;
+  padding-bottom:10px;
+  line-height:25px;
+  letter-spacing:0.2em;
+  border-bottom:1px solid #ccc;
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.top>p:first-child{
+   color:rgb(49, 49, 49);
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.top>p:nth-child(2){
+   color:rgb(247, 166, 45); 
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.top>p:last-child{
+    color:rgb(248, 43, 43);
+    letter-spacing:0 !important;
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.payBtn{
+    margin-top:15px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.payment>ul>.payBtn button{
+    width:90px;height:35px;border: 0;border-radius:0.3rem;
+    background-image: linear-gradient(to top,rgb(125, 177, 245) 0%,rgb(84, 184, 250) 100%);
+    color:#fff;
+}
+/*小叉子*/
+.myCenter>.InfoPayParent>.payInformtion>.arrow{
+    width:35px;height:35px;border-radius: 50%;
+    background-image: linear-gradient(to top,rgb(125, 202, 253) 0%,rgb(118, 187, 243)100%);
+    text-align: center;
+    line-height:31px;
+    font-size:25px;
+    color:#fff;
+    position: absolute;
+    opacity:0.5;
+    top:-23px;right:-33px;
+}
+.myCenter>.InfoPayParent>.payInformtion>.arrow_two{
+   position: absolute;
+   top:7px;right:248px;
+   z-index:999999999;
+   color: rgb(192, 190, 190);
+   font-size:25px;
+}
+/*支付密码，修改登录密码，绑定银行卡号，编辑资料*/
+/*1.修改登录密码*/
+.myCenter>.updatePwd{
+  width:420px;
+  height:320px;
+  border-radius:0.2rem;
+  border:1px solid #ccc;
+  position: fixed;
+  top:120px;
+  left:32%;
+  z-index: 9999999;
+  background-image:linear-gradient(to top,rgb(255, 253, 255) 0%,rgb(255, 255, 255) 100%);
+  box-shadow:0.5px 0.5px 4px rgb(56, 56, 56);
+  display:none;
+}
+.myCenter>.updatePwd>p{
+   text-align: center; 
+   font-size:16px;
+   margin:15px 0px;
+   color: rgb(240, 33, 18);
+   letter-spacing:0.2em;
+}
+.myCenter>.updatePwd>ul li div label{
+   display: inline-block;
+   width:90px; 
+   text-align:right;
+   font-size:14px;
+}
+.myCenter>.updatePwd>ul li input{
+    width:300px;height:35px;
+    border-radius:0.2rem;
+    border:0.5px solid rgb(184, 184, 184);
+    padding-left:10px;
+    /* background-image:linear-gradient(to top,rgb(255, 253, 255) 0%,rgb(255, 255, 255) 100%);
+    box-shadow:0.5px 0.5px 2px rgb(56, 56, 56); */
+}
+.myCenter>.updatePwd>ul li .alertsize{
+   width:300px; 
+   height:30px;
+   line-height:30px;
+   margin-left:92px;
+}
+.myCenter>.updatePwd>ul li:last-child {
+    text-align: center;
+    margin-top:5px;
+}
+.myCenter>.updatePwd>ul li:last-child button{
+    border:0;
+    width:90px; height:35px;
+    color:#fff;
+    border-radius:0.2rem;
+    letter-spacing:0.2em;
+    background-image: linear-gradient(to top,rgb(80, 194, 240) 0%,rgb(60, 141, 247) 100%);
+}
+.myCenter>.updatePwd>ul li:last-child button:first-child{
+    margin-left:15px !important;
+}
+.myCenter>.updatePwd>ul li:last-child button:last-child{
+    margin-left:10px;
+}
+/*2.编辑资料*/
+.myCenter>.compile{ 
+  width:720px; 
+  padding:15px 0px; 
+  border-radius:0.3rem;
+  border:1px solid rgb(250, 248, 248);
+  z-index: 9999999;
+  background-image:linear-gradient(to top,rgb(255, 253, 255) 0%,rgb(255, 255, 255) 100%);
+  box-shadow:0.5px 0.5px 4px rgb(56, 56, 56);
+  position: fixed;
+  top:0px;
+  left:18%;
+  z-index: 9999999; 
+  display:none;
+}
+.myCenter>.compile>.title{
+    width:720px; 
+    text-align:center;
+    margin-bottom:15px;
+    font-size:16px;
+    color:rgb(243, 76, 10);
+    letter-spacing:0.2em;
+}
+.myCenter>.compile>ul>li>label,.myCenter>.compile>ul>li>div>label{  
+    display: inline-block;
+    width:90px;text-align:right;
+}
+.myCenter>.compile>ul>li>div>input{
+    width:520px;height:30px;
+    border:0.5px solid rgb(247, 134, 60);
+    border-radius:0.3rem;
+}
+.myCenter>.compile>ul>li>.alertSize{
+  width:520px;
+  margin-left:98px;
+  height:30px;
+  font-size:12px;
+  line-height:30px;
+  opacity:0;
+}
+.myCenter>.compile>ul>li{
+    margin-left:25px;
+}
+.myCenter>.compile>ul>.genders{
+  margin-bottom:30px;
+}
+.myCenter>.compile>ul>.btns{
+    width:720px;
+    text-align: center;
+}
+.myCenter>.compile>ul>.btns> button,.myCenter>.bind_bank_card>.btncard button{
+    width:100px;height:35px;
+    border:0;
+    border-radius:0.3rem;
+    background-image: linear-gradient(to top,rgb(59, 147, 247) 0%,rgb(32, 89, 245) 100%);
+    color:#fff;
+    letter-spacing:0.3em;
+}
+/*3.绑定银行卡号*/
+.myCenter>.bind_bank_card{
+    width:720px;
+    height:280px;
+    padding:15px 0px;
+    border-radius:0.3rem;
+    border:1px solid rgb(250, 248, 248);
+    z-index: 9999999;
+    background-image:linear-gradient(to top,rgb(255, 253, 255) 0%,rgb(255, 255, 255) 100%);
+    box-shadow:0.5px 0.5px 4px rgb(56, 56, 56);
+    position: fixed;
+    top:60px;
+    left:17.8%;
+    display:none;
+}
+.myCenter>.bind_bank_card>p{
+    text-align: center;
+    color: coral;
+    font-size:16px;
+    letter-spacing:0.5em;
+    margin-bottom:15px;
+}
+.myCenter>.bind_bank_card>ul{
+    display: flex;
+    justify-content: space-between;
+    padding:0 10px;
+}
+.myCenter>.bind_bank_card>ul>li:first-child>input{
+   width:380px;height:30px; 
+   border-radius:0.3rem;
+   padding-left:10px;
+   border:0.5px solid rgb(129, 170, 245);
+}
+.myCenter>.bind_bank_card>ul>li:nth-child(2) select{
+  height:30px;
+  border-radius:0.3rem;
+  border:0.5px solid rgb(129, 170, 245);
+}
+.myCenter>.bind_bank_card>ul>li:last-child{
+    height:30px;
+    line-height:30px;
+}
+.myCenter>.bind_bank_card>.alertCard,
+.myCenter>.bind_bank_card>.phoneCard>.phoneAlert
+{
+  width:720px;
+  height:30px;line-height:30px;
+  padding-left:82px;
+  color:red;
+  opacity:0;
+}
+.myCenter>.bind_bank_card>.phoneCard{
+  width:720px;
+  padding-left:10px;
+}
+.myCenter>.bind_bank_card>.phoneCard>div>label{
+    width:90px;
+    text-align:right;
+    margin-left:14px;
+}
+.myCenter>.bind_bank_card>.phoneCard>div>input{
+    width:380px;height:30px;
+    padding-left:10px;
+    border-radius:0.3rem;
+    border:0.5px solid rgb(129, 170, 245);
+}
+.myCenter>.bind_bank_card>.phoneCard>.phoneAlert{
+  padding-left:75px !important;
+}
+.myCenter>.bind_bank_card>.btncard{
+    width:720px;
+    text-align:center;
+}
+/*4.支付密码*/
+.myCenter>.payment_code{
+  width:520px;
+  padding:15px 10px;
+  border-radius:0.3rem;
+  border:1px solid rgb(250, 248, 248);
+  z-index: 9999999;
+  background-image:linear-gradient(to top,rgb(255, 253, 255) 0%,rgb(255, 255, 255) 100%);
+  box-shadow:0.5px 0.5px 4px rgb(56, 56, 56);
+  position: fixed;
+  top:60px;
+  left:30%;
+  display:none;
+}
+.myCenter>.payment_code>p{
+    text-align: center;
+    color:rgb(245, 98, 40);
+    font-size:16px;
+    letter-spacing:0.5em;
+    margin-bottom:15px;
+}
+.myCenter>.payment_code>ul>li>div>label{
+   display: inline-block;
+   width:90px;text-align: right; 
+}
+.myCenter>.payment_code>ul>li>div>input{
+    width:380px;
+    height:30px;
+    padding-left:10px;
+    border-radius:0.3rem;
+    border:0.5px solid rgb(145, 161, 252);
+}
+.myCenter>.payment_code>ul>li>.paySize{
+  padding-left:98px;
+  height:30px;line-height:30px;
+  color:rgb(235, 41, 41);
+  opacity:0;
+}
+.myCenter>.payment_code>.paymentBtn{
+    width:520px;
+    text-align: center;
+}
+.myCenter>.payment_code>.paymentBtn button{
+    width:80px;height:35px;
+    border:0;
+    border-radius:0.3rem;
+    background-image: linear-gradient(to top,rgb(59, 147, 247) 0%,rgb(32, 89, 245) 100%);
+    color:#fff;
+    letter-spacing:0.3em;
+}

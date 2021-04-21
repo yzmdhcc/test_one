@@ -1,0 +1,224 @@
+
+.detailsContainer{
+  width:1170px;
+  margin:0px auto;
+  background-color: #fff;
+}
+.detailsContainer .Shopinformation{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:2px 5px;
+}
+.detailsContainer .Shopinformation .informationPics{
+  width:45%;
+  border:0.5px solid rgb(233, 230, 230);
+  text-align: center;
+}
+.detailsContainer .infoImage img{
+  width:80%;
+  height:370px;
+}
+.detailsContainer .Shopinformation .infoSamllImg{
+  width:100%;position: relative;
+}
+.detailsContainer .Shopinformation .infoSamllImg ul li{
+  width:64px;
+  height:64px;
+}
+.detailsContainer .Shopinformation .infoSamllImg ul{
+  width:340px;
+  display: flex;
+  justify-content: space-between;
+  margin:0 auto;
+}
+.detailsContainer .Shopinformation .infoSamllImg .detalisBtns button:nth-child(1){
+  left:5%;
+  padding:5px 4px;
+}
+.detailsContainer .Shopinformation .infoSamllImg .detalisBtns button:nth-child(2){
+  right:5%;
+  padding:5px 2px;
+}
+.detailsContainer .Shopinformation .infoSamllImg .detalisBtns img{
+   width:32px;
+   height:32px;
+}
+.detailsContainer .Shopinformation .infoSamllImg .detalisBtns button{
+  width:32px;
+  height:48px;
+  border:0;
+  background:rgba(7, 7, 7,0.5);
+  border-radius:3px;
+  position: absolute;
+  top:10%;
+} 
+.detailsContainer .Shopinformation .Rightparticulars{
+  width:52%;
+  padding:0px 5px;
+}
+.detailsContainer .Shopinformation .Rightparticulars h3{
+  padding:10px 0px;
+}
+.detailsContainer .Shopinformation .Rightparticulars .subhead,
+.detailsContainer .Shopinformation .Rightparticulars .detailsPrice,
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo
+{
+  color: rgb(47, 47, 48);
+  padding:10px 0px; 
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsPrice p span{
+   color:rgb(63, 154, 240);
+   font-weight: bolder;
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo p:first-child{
+  padding:10px 0px;
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo .detailsInfoCs ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:425px;
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo .detailsInfoCs ul li input{
+ display:none;
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo .detailsInfoCs span{
+  margin-bottom:5px;
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo .detailsInfoCs ul li span{
+  display: block;
+  width:210px;
+  height:32px;
+  line-height:32px;
+  text-align: center;
+  border-radius:3px;
+  font-size:12px;
+  color:rgb(231, 84, 170);
+  background-image: linear-gradient(to top,rgb(228, 228, 228) 0%,rgb(241, 241, 241) 100%);
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo .detailsCount{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  margin-top:10px;
+  text-align: center;
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo .detailsCount span{
+  width:36px;
+  height:28px;
+  line-height:28px;
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo .detailsCount div button{
+  width:34px;
+  height:28px;
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailsInfo .detailsCount div input{
+  width:80px;
+  height:28px;
+  text-align: center;
+}
+.detailsContainer .Shopinformation .Rightparticulars .detailscart button{
+  width:120px;
+  height:35px;
+  border-radius:3px;
+  color: #fff;
+  background-image: linear-gradient(to top,rgb(235, 136, 54) 0%,rgb(240, 176, 57) 100%);
+  border:0;
+}
+.detailsContainer .introduction{
+   width:100%;
+   margin-top:10px;
+   padding:0px 5px;
+}
+.detailsContainer .introduction .ductionNav{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to top,rgb(238, 239, 241) 0%,rgb(234, 235, 236) 100%);
+  color:rgb(117, 116, 116);
+}
+.detailsContainer .introduction .ductionNav ul{
+  width:100%;
+}
+.detailsContainer .introduction .ductionNav ul li{
+  float:left;
+  width:90px;
+  text-align: center;
+  font:14px "";
+  height:35px;
+  line-height:35px;
+}
+.detailsContainer .introduction .ductionNav ul li:first-child{
+ background-color: #ec4e1e;
+ color:#fff;
+}
+.detailsContainer .introduction .ductionNav ul li:not(:first-child){
+  margin-left:3%;
+}
+.detailsContainer .introduction .ductionContent{
+  width:100%;
+  padding:10px 40px;
+  color:rgb(182, 179, 179);
+  font-size:12px;
+}
+.detailsContainer .introduction .ductionContent div{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  margin-top:15px;
+}
+
+.guessWhatYouLike .advance{
+  padding:0px 5px;
+}
+.guessWhatYouLike .advance .advanceTitle{
+  width:100%;
+  text-align: center;
+}
+.guessWhatYouLike .advance .advanceTitle div{
+  width:18%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px 0px;
+  margin:0 auto;
+}
+.guessWhatYouLike .advance .advanceTitle div span:nth-child(2){
+  font-size:16px;
+  color: rgb(140, 143, 142);
+  letter-spacing:0.7em;
+  margin-left:12px;
+  margin-top:-5px;
+}
+.guessWhatYouLike .advance .advanceContent ul{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+
+}
+.guessWhatYouLike .advance .advanceContent ul li{
+  width:16.5%;
+  background-color: #fff;
+  border:0.3px solid rgb(235, 232, 232);
+  padding:6px 6px;
+  margin:3px 0px;
+}
+.guessWhatYouLike .advance .advanceContent ul li .advancePics img{
+  width:100%;
+  height:170px;
+}
+.guessWhatYouLike .advance .advanceContent ul li .advanceShopInfo{
+  padding:5px 0px;
+  font-size:12px;
+  color: #4e4e4e;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap; 
+}
+.guessWhatYouLike .advance .advanceContent ul li .advancePrice{
+  text-align: center;
+  color: #ec4e1e;
+  padding:3px 0px;
+  font:bold 14px  ""; 
+}

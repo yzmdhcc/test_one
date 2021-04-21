@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'hyy4gjm';
+  src: url('../font/hyy4gjm.eot');
+  src: local('hyy4 gjm'),
+         local('hyy4gjm'),
+         url('../font/hyy4gjm.ttf') format('truetype'),
+         url('../font/hyy4gjm.svg#fontname') format('svg');
+ }  
+html{
+  font-family:"hyy4gjm";
+  font-size:14px;
+}
+body{
+  width:100%;
+  height:100vh;
+  background-color:rgb(253, 250, 250);
+}
+html,h1,h2,h3,h4,h5,h6,p,li,ul,ol,div,button,table,td,tr,tbody,thead,tfoot,th,b,i,span,img,input,strong,a,body,.header{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+a{
+  text-decoration: none;
+  font-size:14px;
+  color: black;
+}
+a:hover{
+  color:red;
+  font-size:14px;
+  text-decoration: none;
+}
+ul li,ol li{
+  list-style-type: none;
+}
+span{
+  display:inline-block;
+}
+/*解决使用marign-top时父元素跟着移动*/
+.table::before{
+ content:"";
+ display:table;
+}
+/*解决高度坍塌*/
+.clearDiv::after{
+  content:"";
+  display:inline-block;
+}

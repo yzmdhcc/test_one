@@ -1,0 +1,361 @@
+
+header{
+  width: 100%;
+  height:160px;
+  background-color: rgb(241, 62, 62);
+}
+.content{
+  width:100%;
+}
+.content .banner{
+  width:100%;
+}
+.content .banner .bannerNavOne{
+  width:720px;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 0px;
+  margin:0 auto;
+}
+.content .banner .bannerImages{
+  width: 100%;
+  height:460px;
+  overflow: hidden;
+  position: relative;
+}
+.content .banner .bannerImages ul img{
+  width:100%;
+  height:460px;
+}
+.content .banner .bannerImages .leftPrevBtn,.content .banner .bannerImages .rightNextBtn,
+.content .banner .bannerImages .bannerCircle{
+  position:absolute;
+}
+.content .banner .bannerImages .bannerBtn{
+  width:100%;
+}
+.content .banner .bannerImages .leftPrevBtn,.content .banner .bannerImages .rightNextBtn{
+  height:72px;
+  width:36px;
+  padding:18px 0px;
+  background-color: rgba(0, 0,0,0.5);
+  top:200px;
+}
+.content .banner .bannerImages .bannerBtn img{
+  width:100%;
+  height:36px;
+}
+.content .banner .bannerImages .leftPrevBtn{
+  left:5%;
+  padding-left:8px;
+}
+.content .banner .bannerImages .rightNextBtn{
+  padding-left:2px;
+  right:5%;
+}
+.content .banner .bannerImages .bannerCircle{
+   width:50%;
+   height:50px;
+   top:64vh;
+   left:38%;
+}
+.content .banner .bannerImages .bannerCircle li{
+  width:20px;
+  height:20px;
+  margin-left:5%;
+  border-radius:50%;
+  float: left;
+  border:1px solid rgb(241, 114, 9);
+}
+.content .Indexfloor{
+  width:1170px;
+  height:42px;
+  margin:0 auto;
+  border-bottom:2px solid #dfe1e2;
+  display:flex;
+  justify-content: space-between;
+}
+.content .Indexfloor span{
+  /* display:inline-block; */
+  font:bold 16px ""  ;
+  color:rgb(243, 120, 243);
+  margin-top:8px;
+}
+.content .Indexfloor .loorLeft{
+   margin-left:10px;
+}
+.content .Indexfloor .IndexfloorRight{
+  font:normal 12px "";
+  color: rgb(118, 119, 119);
+  margin-top:20px;
+}
+.content .seckill{
+   width:1170px;
+   display:flex;
+   justify-content: space-between;
+   margin:0px auto;
+   margin-top:5px !important;
+}
+.content .seckill .timekeeping{
+  width:17%;
+  text-align: center;
+  color:#fff;
+  background-image: linear-gradient(to top,rgb(240, 143, 32) 0%,rgb(238, 122, 54) 100%);
+}
+.content .seckill .timekeeping h1{
+  padding-top:48px;
+  padding-left:10px;
+  letter-spacing:8px;
+}
+.content .seckill .timekeeping .seckillCenter img{
+  width:42px;
+  height:82px;
+}
+.content .seckill .timekeeping .seckillBottom{
+  font-size:16px;
+}
+.content .seckill .timekeeping .seckillBottom .spanTime{
+  font-weight:bold;
+}
+.content .seckill .timekeeping .seckillBottom .seckillTime{
+  margin-top:15px;
+}
+.content .seckill .timekeeping .seckillBottom .seckillTime span{
+  display:inline-block;
+  font-size:12px;
+  padding:2px 5px;
+  letter-spacing:1px;
+  background-color:rgba(0,0,0,0.8);
+
+}
+.content .seckill .timekeeping .seckillBottom .seckillTime b{
+  margin:0 5px;
+}
+.content .seckill .seckillShop{
+  width:65%;
+  padding:0px 14px;
+  position: relative;
+}
+.content .seckill .seckillShop ul{
+   width:100%;
+   display:flex;
+   justify-content: space-between;
+}
+.content .seckill .seckillShop ul li{
+  width:24.5%;
+  height:260px;
+}
+.content .seckill .seckillShop ul li .hotImg {
+  width:100%;
+  padding:0px 1px;
+  height:182px;
+  border:0.5px solid rgb(210, 210, 211);
+
+}
+.content .seckill .seckillShop ul li .hotImg img{
+  width:100%;
+  height:180px;
+}
+.content .seckill .seckillShop .hotContent{
+  margin-top:5px;
+  height:70px;
+  padding:5px 5px;
+  font-size:12px;
+  background-color: #fff;
+  border:0.5px solid rgb(210, 210, 211);
+} 
+.content .seckill .seckillShop .hotContent p{
+  color: rgb(37, 37, 37);
+}
+.content .seckill .seckillShop .hotContent .hotPrice{
+  width:100%;
+  margin-top:3px;
+}
+.content .seckill .seckillShop .hotContent .hotPrice span{
+   display: inline-block;
+   text-align: center;
+   padding:5px 0px;
+   font-style: italic;
+   color:rgb(3, 3, 3);
+   width:50%;
+}
+.content .seckill .seckillShop .hotContent .hotPrice span:nth-child(1){
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+  /* background-image: linear-gradient(to right,rgb(230, 131, 18) 0%,rgb(238, 118, 19) 100%);  */
+}
+.content .seckill .seckillShop .hotContent .hotPrice span:nth-child(2){
+  border-top-right-radius:3px;
+  border-bottom-right-radius:3px;
+  text-decoration:line-through;
+  color: rgb(219, 213, 213);
+  /* background-image: linear-gradient(to right,rgb(78, 190, 255) 0%,rgb(96, 181, 238) 100%);  */
+}
+.content .seckill .seckillShop .seckillShopBtn img{
+  width:22px;
+  height:22px;
+}
+.content .seckill .seckillShop .seckillShopBtn .seckillLeft,
+.content .seckill .seckillShop .seckillShopBtn .seckillRigth
+{
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  padding:6px 0px;
+  width:32px;
+  height:34px;
+  border:0px;
+  top:113px;
+  background-color:rgba(0,0,0,0.3);
+}
+.content .seckill .seckillShop .seckillShopBtn .seckillLeft{
+  border-top-right-radius:50%;
+  border-bottom-right-radius:50%;
+  left:0%;
+}
+.content .seckill .seckillShop .seckillShopBtn .seckillRigth{
+  border-top-left-radius:50%;
+  border-bottom-left-radius:50%;
+  padding-left:7px;
+  right:0%;
+}
+.content .seckill .seckillHotCarousel{
+  width:18%;
+  position: relative;
+}
+.content .seckill .seckillHotCarousel ul{
+  width:100%;
+  height:260px;
+  overflow: hidden;
+}
+.content .seckill .seckillHotCarousel ul li img{
+  width:100%;
+  height:260px;
+}
+.content .seckill .seckillHotCarousel .seckillHotCircle{
+  position: absolute;
+  top:37vh;
+  left:33%;
+}
+.content .seckill .seckillHotCarousel .seckillHotCircle li{
+  width:12px;
+  height:12px;
+  float: left;
+  border-radius:50%;
+  margin-left:5%;
+  border:1px solid rgb(65, 199, 240);
+}
+.content .proudct{
+  width:1170px;
+  margin:0px auto;
+}
+.content .proudct .productComputer ul{
+   width:100%;
+   display:flex;
+   justify-content:space-between;
+   flex-wrap: wrap;
+}
+.content .proudct .productComputer ul li{
+  width:24.7%;
+  border:0.3px solid rgb(235, 232, 232);
+  padding:3px 3px;
+  margin-top:5px;
+  background-color:#fff;
+}
+.content .proudct .productComputer ul li img{
+  width:100%;
+  height:260px;
+}
+.content .proudct .productComputer .productShopInfo{
+  height:42px;
+  line-height:42px;
+  color: #4e4e4e;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.content .proudct .productComputer .productPrice,
+.content .proudct .productComputer .productSales
+{
+  display:flex;
+  justify-content: space-between;
+  padding:3px 0px;
+}
+.content .proudct .productComputer .productPrice span:nth-child(1){
+  color: rgb(241, 82, 33);
+  font-weight: bold;
+}
+.content .proudct .productComputer .productPrice span:nth-child(2){
+  color: #4e4e4e;
+}
+.content .proudct .productComputer .productSales span:nth-child(1){
+  color:rgb(133, 132, 130);
+}
+.content .proudct .productComputer .productSales span:nth-child(2){
+  padding:0px 5px;
+  font-size:12px;
+  border:1px solid rgb(63, 149, 247);
+  color:rgb(63, 149, 247);
+  border-radius:3px;
+}
+.content .proudct .productPhone3F ul li,
+.content .proudct  .productPhone4F ul li 
+{
+  text-align:center; 
+}
+.content .proudct .productPhone3F ul li img{
+  width:82% !important;
+}
+.content .proudct  .productPhone4F ul li img{
+  width:76% !important;
+}
+.content .proudct .advance .advanceTitle{
+    width:100%;
+    text-align: center;
+}
+.content .proudct .advance .advanceTitle div{
+    width:18%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 0px;
+    margin:0 auto;
+}
+.content .proudct .advance .advanceTitle div span:nth-child(2){
+    font-size:16px;
+    color: rgb(140, 143, 142);
+    letter-spacing:0.7em;
+    margin-left:12px;
+    margin-top:-5px;
+}
+.content .proudct .advance .advanceContent ul{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+
+}
+.content .proudct .advance .advanceContent ul li{
+  width:16.5%;
+  background-color: #fff;
+  border:0.3px solid rgb(235, 232, 232);
+  padding:6px 6px;
+  margin:3px 0px;
+}
+.content .proudct .advance .advanceContent ul li .advancePics img{
+  width:100%;
+  height:170px;
+}
+.content .proudct .advance .advanceContent ul li .advanceShopInfo{
+  padding:5px 0px;
+  font-size:12px;
+  color: #4e4e4e;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap; 
+}
+.content .proudct .advance .advanceContent ul li .advancePrice{
+  text-align: center;
+  color: #ec4e1e;
+  padding:3px 0px;
+  font:bold 14px  ""; 
+}
